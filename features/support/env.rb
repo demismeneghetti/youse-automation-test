@@ -1,5 +1,5 @@
 require 'capybara/cucumber'
-require "selenium-webdriver"
+require 'selenium-webdriver'
 require 'gherkin'
 
 Capybara.default_driver = :selenium
