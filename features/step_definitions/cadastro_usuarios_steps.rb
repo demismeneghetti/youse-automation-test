@@ -5,8 +5,8 @@ Dado(/^que eu esteja na tela de cadastro$/) do
 end
 
 Quando(/^eu realizar o preenchimento dos campos e solicitar o cadastro$/) do
-   expect(page).to have_title 'Cadastre-se Para Ser Um Youser | Youse'
-   SignUpUser.new.cadastro_usuario(ENV['NOME'], ENV['EMAIL'], ENV['SENHA'])
+  expect(page).to have_title 'Cadastre-se Para Ser Um Youser | Youse'
+  SignUpUser.new.cadastro_usuario(ENV['NOME'], ENV['EMAIL'], ENV['SENHA'])
 end
 
 Entao(/^o cadastro inicial estará completo$/) do
