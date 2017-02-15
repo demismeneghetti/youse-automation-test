@@ -4,10 +4,25 @@ Automação de testes funcionais da Youse
 - Solicitação de proposta; e,
 - Solicitação de proposta via detalhes.
 
+PRÉ-CONDIÇÕES:
+ruby 2.2.0
+
+CONFIGURANDO AMBIENTE:
+gem install bundler
+bundle
 
 PARAMETROS NECESSÁRIOS PARA EXECUÇÃO:
+NOME
 EMAIL
 SENHA
 
+TAGS:
+@cadastro_usuario -> executa testes da feature cadastro de usuário
+@cadastro_usuario_senha_divergente -> executa testes da feature cadastro de usuário
+@proposta_detalhes ->
+@proposta_home ->
+@proposta ->
+@smoke
+
 EXEMPLO DE COMANDO:
-cucumber features/specifications/cadastro_usuario.feature EMAIL=test_youse@GMAIL.COM SENHA=123456789
+cucumber -t @cadastro_usuario EMAIL=automacao_001@gmail.com SENHA=0123456789

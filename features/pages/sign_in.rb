@@ -1,10 +1,9 @@
 class SignInUser < SitePrism::Page
 
-elements :cadastro, 'a.button.button--secondary'
+  elements :cadastro, 'a.button.button--secondary'
 
-def cadastre_se
-  self.cadastro.first.click
-end
-
+  def cadastre_se
+    self.cadastro.first.click
+  end
 
 end
