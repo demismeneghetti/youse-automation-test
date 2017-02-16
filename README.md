@@ -25,4 +25,4 @@ TAGS:
 @smoke
 
 EXEMPLO DE COMANDO:
-cucumber -t @cadastro_usuario EMAIL=automacao_001@gmail.com SENHA=0123456789
+cucumber -t @nome_da_tag NOME=˜Nome do Usuário" EMAIL=email@dominio.com SENHA=senha8caracteres
