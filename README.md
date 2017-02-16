@@ -14,7 +14,9 @@ bundle
 PARAMETROS NECESSÁRIOS PARA EXECUÇÃO:
 NOME
 EMAIL
+EMAIL_INVALIDO
 SENHA
+COMFIRMA_SENHA
 
 TAGS:
 @cadastro_usuario -> executa testes da feature cadastro de usuário
