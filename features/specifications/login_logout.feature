@@ -1,19 +1,13 @@
 # language: pt
-Funcionalidade: Realizar testes de login
+Funcionalidade: Realizar Testes de Login
 
-@login_usuario_invalido @smoke
-Cenario: Login de usuário inválido
-  Dado que eu esteja na tela de login
-  Quando eu realizar o preenchimento do campo com usuário invalido
-  Entao os campos com dados inválidos deverão apresentar mensagem de erro
-
-@login_usuario_valido @smoke
+@login_usuario_valido @all
 Cenario: Login de usuário válido
   Dado que eu esteja na tela de login
   Quando eu realizar o preenchimento dos campos e logar
   Entao a aplicação apresentará a página inicial logada
 
-@login_logout_usuario @smoke
+@login_logout_usuario @all
 Cenario: Cadastro de usuário válido
   Dado que eu esteja na tela de login
   Quando eu realizar o preenchimento dos campos e logar

@@ -1,13 +1,7 @@
 # language: pt
-Funcionalidade: Realizar cadastro de um novo usuário
+Funcionalidade: Realizar Testes de Cadastro de Novos Usuários
 
-@cadastro_usuario_senha_divergente @smoke
-Cenario: Cadastro de usuário inválido
-  Dado que eu esteja na tela de cadastro
-  Quando eu realizar o preenchimento dos campos e solicitar o cadastro
-  Entao os campos com dados divergentes deverão apresentar mensagem de erro
-
-@cadastro_usuario_valido @smoke
+@cadastro_usuario_valido @all
 Cenario: Cadastro de usuário válido
   Dado que eu esteja na tela de cadastro
   Quando eu realizar o preenchimento dos campos e solicitar o cadastro

@@ -9,7 +9,7 @@ Quando(/^eu preencher os dados e submeter a proposta$/) do
   SeguroAuto.new.fazer_cotacao_button.click
 
   expect(page).to have_content 'Oi, a gente quer conhecer você melhor, é rapidinho'
-  Order.new.preenche_proposta(ENV['NOME'], ENV['TIPO'], ENV['TELEFONE'], ENV['EMAIL'])
+  Order.new.preenche_proposta(ENV['NOME'], ENV['TIPO'], ENV['TELEFONE'], ENV['NOVO_EMAIL'])
 
   expect(page).to have_content 'Agora, fale um pouquinho sobre o seu carro.'
   OrderPriceRequirements.new.preenche_proposta_pricing_requirements(ENV['MARCA'], ENV['MODELO'], ENV['ANO'], ENV['VERSAO'], ENV['CEP'], ENV['SEXO'], ENV['DATA_NASCIMENTO'], ENV['ESTADO_CIVIL'], ENV['PRINCIPAL_CONDUTOR'], ENV['COBERTURA_EXTRA'], ENV['SINISTRO'])
