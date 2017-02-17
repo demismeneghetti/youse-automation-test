@@ -1,12 +1,12 @@
 class SignInUser < SitePrism::Page
 
-  elements :cadastro, 'a.button.button--secondary'
-  element :email_text, 'input#email'
-  element :senha_text, 'input#user_password'
-  element :proximo_passo_button, 'input.button.button'
-  element :entrar_button, 'input.button.button'
-  elements :drop_dow_minha_conta_logada, 'a.account-header__account-link'
-  element :sair_link, 'a#track_logout'
+elements :cadastro, 'a.button.button--secondary'
+element :email_text, 'input#email'
+element :senha_text, 'input#user_password'
+element :proximo_passo_button, 'input.button.button'
+element :entrar_button, 'input.button.button'
+elements :drop_dow_minha_conta_logada, 'a.account-header__account-link'
+element :sair_link, 'a#track_logout'
 
   def cadastre_se
     self.cadastro.first.click
