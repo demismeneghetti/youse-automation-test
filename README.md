@@ -21,7 +21,7 @@ COMFIRMA_SENHA
 
 
 TAGS:
-@cadastro_usuario -> executa teste da feature Realizar Testes de Cadastro de Novos Usuários
+@cadastro_usuario -> executa teste da feature Realizar Testes de Cadastro de Novos Usuários<\br>
 @login_usuario_valido -> executa teste da feature Realizar Testes de Login
 @login_logout_usuario -> executa teste da feature Realizar Testes de Login
 @proposta_detalhes -> esecuta teste de feature Solicitação de Proposta de Seguros 
