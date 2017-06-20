@@ -24,6 +24,3 @@ end
 Entao(/^a aplicação apresentará a página para pagamento$/) do
   expect(page).to have_content 'Aeee! Estamos quase lá.'
 end
-
-#Pricing Requirements
-#HONDA, CIVIC, 2014, CIVIC SEDAN EXR 2.0 FLEXONE 16V AUT. 4P (Gasolina/Flex), 05363000, masculino, 30111980, casado(a), sou, Não desejo, nunca tive
