@@ -8,16 +8,8 @@ PRÉ-CONDIÇÕES:
 ruby 2.2.0
 
 CONFIGURANDO AMBIENTE:
-gem install bundler
-bundle
-
-PARAMETROS NECESSÁRIOS PARA EXECUÇÃO:
-NOME
-EMAIL
-NOVO_EMAIL
-EMAIL_INVALIDO
-SENHA
-COMFIRMA_SENHA
+1) gem install bundler;
+2) bundle.
 
 
 TAGS:
@@ -28,10 +20,10 @@ TAGS:
 @all -> executa todos os testes do projeto
 
 EXEMPLO DE COMANDO LOGIN:
-cucumber -t @nome_da_tag NOME=˜Nome do Usuário" EMAIL=email@dominio.com SENHA=senha8caracteres
+cucumber -t @nome_da_tag
 
 EXEMPLO DE COMANDO CADASTRO:
-cucumber -t @nome_da_tag NOME=˜Nome do Usuário" NOVO_EMAIL=email@dominio.com NOVA_SENHA=senha8caracteres
+cucumber -t @nome_da_tag
 
 EXEMPLO DE COMANDO SOLICITAÇÃO DE PROPOSTA:
-cucumber -t @nome_da_tag NOME=˜Nome do Usuário" TIPO='pra mim' TELEFONE=11999999999 NOVO_EMAIL=email@dominio.com SENHA=senha8caracteres MARCA=CITROËN ANO=2010 VERSAO='C4 GLX 1.6 FLEX 16V 5P MEC. (Gasolina / Flex)' CEP=05363000 SEXO=Masculino DATA_NASCIMENTO=30111980 ESTADO_CIVIL='Casado(a)' PRINCIPAL_CONDUTOR=sou COBERTURA_EXTRA='Nâo desejo' SINISTRO='nunca tive'
+cucumber -t @nome_da_tag
