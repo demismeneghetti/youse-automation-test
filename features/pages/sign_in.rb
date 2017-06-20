@@ -1,4 +1,4 @@
-class SignInUser < SitePrism::Page
+class SignIn < SitePrism::Page
 
 elements :cadastro, 'a.button.button--secondary'
 element :email_text, 'input#email'
@@ -8,14 +8,14 @@ element :entrar_button, 'input.button.button'
 elements :drop_dow_minha_conta_logada, 'a.account-header__account-link'
 element :sair_link, 'a#track_logout'
 
-  def cadastre_se
-    self.cadastro.first.click
-  end
+  def login
+    $user = OpenStruct.new
+    $user.email = 'usuario_teste@gmail.com'
+    $user.senha = '147258369'
 
-  def login(email, senha)
-    self.email_text.set email
+    self.email_text.set $user.email
     self.proximo_passo_button.click
-    self.senha_text.set senha
+    self.senha_text.set $user.senha
     self.entrar_button.click
   end
 

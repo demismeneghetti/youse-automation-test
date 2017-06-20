@@ -3,6 +3,9 @@ require 'selenium-webdriver'
 require 'cucumber'
 require 'site_prism'
 require 'pry'
+require 'faker'
+require 'ostruct'
+require 'rspec'
 
 Capybara.default_driver = :selenium
 Capybara.default_max_wait_time = 10

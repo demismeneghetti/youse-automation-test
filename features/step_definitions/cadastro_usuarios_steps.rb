@@ -1,17 +1,17 @@
 Dado(/^que eu esteja na tela de cadastro$/) do
   visit 'http://www.youse.com.br'
   Home.new.minha_conta.click
-  SignInUser.new.cadastre_se
+  SignIn.new.cadastro.first.click
 end
 
 Quando(/^eu realizar o preenchimento dos campos e solicitar o cadastro$/) do
   expect(page).to have_title 'Cadastre-se Para Ser Um Youser | Youse'
-  SignUpUser.new.cadastro_usuario(ENV['NOME'], ENV['NOVO_EMAIL'], ENV['SENHA'])
+  SignUp.new.cadastro_usuario
 end
 
 Entao(/^o cadastro inicial estará completo$/) do
   expect(page).to have_content 'Ops, você ainda não tem nenhum seguro Youse. =('
-  expect(page).to have_content ENV['NOME']
+  expect(page).to have_content "#{$nome}"
 end
 
 Entao(/^os campos com dados divergentes deverão apresentar mensagem de erro$/) do
