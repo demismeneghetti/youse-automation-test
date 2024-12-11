@@ -10,7 +10,7 @@ GEM
       addressable
       mime-types (>= 1.16)
       nokogiri (>= 1.16.5)
-      rack (~> 1.6.11)
+      rack (>= 2.2.8.1)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
     childprocess (0.6.1)
